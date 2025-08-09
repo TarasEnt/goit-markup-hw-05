@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goit-markup-hw-01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap'
+        rel='stylesheet' />
+    <link rel="stylesheet" href="./css/steles.css">
+</head>
+
+<body>
+    <!--  header  -->
+    <header class="page-header">
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="logo header-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
+                <ul class="nav-list">
+                    <li class="nav-iten"><a class="nav-link-studio" href="./index.html">Studio</a></li>
+                    <li class="nav-iten"><a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-iten"><a class="nav-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-iten"><a class="contacts-link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contacts-iten"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </header>
+
+    <main>
+        <!--  section-hero  -->
+        <section class="section-hero">
+            <div class="container">
+                <h1 class="hero-title">Effective Solutions
+                    for Your Business</h1>
+
+                <button type="button" class="hero-button">Order Service</button>
+            </div>
+        </section>
+
+
+     <div class="contacts-container">
+        <svg class="contacts-close" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        <p class="contacts-text">Leave your contacts and we will call you back</p>
+        <form class="contacts-form">
+            <label class="contacts-form-label">
+                <span class="contacts-label-text">Name</span>
+                 <input class="contacts-form-input" type="text" name="username">
+            </label>
+     
+            <label class="contacts-form-label">
+                <span class="contacts-label-text">Phone</span>
+                <input class="contacts-form-input" type="text" name="username" />
+            </label>
+      
+            <label class="contacts-form-label">
+                <span class="contacts-label-text">Email</span>
+                <input class="contacts-form-input" type="text" name="username" />
+            </label>
+    <label class="contacts-form-label">
+    <span class="contacts-label-text">Comment</span> 
+        <textarea class="contacts-form-textarea" name="comment" rows="" placeholder="Text input"></textarea>
+    </label>
+    
+    <p class="text-privacy-policy"><svg class="contacts-click" width="16" height="16">
+        <use href="./images/icons.svg"></use></svg>I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a></p>
+    <button type="submit" class="button-contacts-sent">Sent</button>
+    </form>
+     </div>
