@@ -510,7 +510,7 @@ padding: 72px 24px 24px 24px;
 }
 .contacts-close:hover,
 .contacts-close:focus{
-    fill: #ffffff
+ fill: #ffffff
 }
 .contacts-text{
     font-weight: 500;
@@ -546,18 +546,21 @@ padding: 72px 24px 24px 24px;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-form-input:focus{
-border-color: #4D5AE5;
-}
+
 .input-svg{
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .input-svg:focus{
-    fill: #4D5AE5;
+fill: #4D5AE5;
+}
+.contacts-form-input:focus {
+    border-color: #4D5AE5;
+    
 }
 .form-Comment{
     margin-bottom: 16px;
@@ -621,8 +624,9 @@ input:checked span {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
-    cursor: pointer
+    cursor: pointer;
     border: none;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+background-color: #4D5AE5;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
