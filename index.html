@@ -352,70 +352,78 @@ problem to walk away with the perfect and creative solution. </p>
 </div>
 </footer>
     <!--  modal-overlay  -->
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button class="modal-close-btn" type="button" data-modal-close>
             <svg class="modal-close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+
         <p class="modal-title">Leave your contacts and we will call you back</p>
+
         <form class="contacts-form">
-            <div class="contacts-form-wrapper">
-                <label for="field-name" class="contacts-form-label">Name</label>
-                <div class="contacts-input-wrapper">
-                    <input type="text" name="field-name" id="field-name" class="contacts-form-input" />
+            <!-- Name -->
+            <div class="contacts-form-field">
+                <label class="contacts-form-label" for="user-name">Name</label>
+                <div class="contacts-form-input-wrapper">
+                    <input class="contacts-form-input" type="text" name="user-name" id="user-name" required />
                     <svg class="contacts-form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </div>
             </div>
 
-            <div class="contacts-form-wrapper">
-                <label for="field-phone" class="contacts-form-label">Phone</label>
-                <div class="contacts-input-wrapper">
-                    <input type="tel" name="field-phone" id="field-phone" class="contacts-form-input" />
+            <!-- Phone -->
+            <div class="contacts-form-field">
+                <label class="contacts-form-label" for="user-phone">Phone</label>
+                <div class="contacts-form-input-wrapper">
+                    <input class="contacts-form-input" type="tel" name="user-phone" id="user-phone" required />
                     <svg class="contacts-form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                 </div>
             </div>
 
-            <div class="contacts-form-wrapper">
-                <label for="user-email" class="contacts-form-label">Email</label>
-                <div class="contacts-input-wrapper">
-                    <input type="email" name="user-email" id="user-email" class="contacts-form-input" />
+            <!-- Email -->
+            <div class="contacts-form-field">
+                <label class="contacts-form-label" for="user-email">Email</label>
+                <div class="contacts-form-input-wrapper">
+                    <input class="contacts-form-input" type="email" name="user-email" id="user-email" required />
                     <svg class="contacts-form-icon" width="18" height="24">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </div>
             </div>
 
-            <div class="contacts-form-wrapper-comment contacts-form-wrapper">
-                <label for="field-comment" class="contacts-form-label">Comment</label>
-                <textarea name="field-comment" id="field-comment" placeholder="Text input"
-                    class="contacts-form-message"></textarea>
+            <!-- Comment -->
+            <div class="contacts-form-field">
+                <label class="contacts-form-label" for="user-comment">Comment</label>
+                <textarea class="contacts-form-input contacts-form-message" name="user-comment" id="user-comment"
+                    placeholder="Text input"></textarea>
             </div>
 
-            <div class="contacts-form-wrapper-checkbox">
-                <input type="checkbox" id="field-privacy" name="field-privacy" value="true"
-                    class="contacts-form-checkbox visually-hidden" />
-                <label for="field-privacy" class="privacy-policy-label">
+            <!-- Checkbox -->
+            <div class="contacts-form-checkbox-wrapper">
+                <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="agree"
+                    required />
+                <label class="contacts-form-checkbox-label" for="user-privacy">
                     <span class="privacy-policy-checkbox">
                         <svg class="privacy-policy-icon" width="10" height="8">
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
                     I accept the terms and conditions of the
-                    <a href="#" class="privacy-policy-link">Privacy Policy</a>
+                    <a class="privacy-policy-link" href="">Privacy Policy</a>
                 </label>
             </div>
 
-            <button type="submit" class="contacts-form-submit">Send</button>
+            <!-- Button -->
+            <button class="contacts-form-submit-btn" type="submit">
+                Send
+            </button>
         </form>
     </div>
 </div>
-
-
 </body>
 </html>
