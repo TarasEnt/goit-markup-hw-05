@@ -625,7 +625,7 @@ color: #fff;
     align-items: center;
 }
 
-.privacy-policy-checkbox {
+span.privacy-policy-checkbox {
     align-items: center;
     display: inline-flex;
     justify-content: center;
